@@ -45,6 +45,7 @@
 ## 相关项目
 
 - [auto-power-fnos](https://github.com/guoxizheng/auto-power-fnos) — 远程电源管理飞牛应用（休眠/WOL，本应用的好搭档）
+- [model-convert-fnos](https://github.com/guoxizheng/model-convert-fnos) — 模型转换飞牛应用（fp8/bf16→fp16，切到视频模式前先转权重）
 
 ## License
 
