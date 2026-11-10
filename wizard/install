@@ -1,0 +1,44 @@
+[
+  {
+    "stepTitle": "远程主机 SSH 信息",
+    "items": [
+      {
+        "type": "text",
+        "field": "wizard_ssh_host",
+        "label": "主机 IP",
+        "initValue": "192.168.50.10",
+        "rules": [{"required": true, "message": "请输入远程主机 IP"}]
+      },
+      {
+        "type": "text",
+        "field": "wizard_ssh_user",
+        "label": "SSH 用户名",
+        "initValue": "guoxizheng",
+        "rules": [{"required": true, "message": "请输入 SSH 用户名"}]
+      },
+      {
+        "type": "password",
+        "field": "wizard_ssh_pass",
+        "label": "SSH 密码",
+        "rules": [{"required": true, "message": "请输入 SSH 密码"}]
+      }
+    ]
+  },
+  {
+    "stepTitle": "WOL 唤醒设置",
+    "items": [
+      {
+        "type": "text",
+        "field": "wizard_wol_mac",
+        "label": "远程主机网卡 MAC",
+        "initValue": "0c:9d:92:cb:3e:1e"
+      },
+      {
+        "type": "text",
+        "field": "wizard_wol_broadcast",
+        "label": "广播地址",
+        "initValue": "192.168.50.255"
+      }
+    ]
+  }
+]

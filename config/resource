@@ -1,0 +1,6 @@
+{
+  "port-config": {
+    "protocol-file": "ai-switch.sc"
+  },
+  "systemd-unit": {}
+}

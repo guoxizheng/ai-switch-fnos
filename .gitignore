@@ -1,0 +1,4 @@
+testenv/
+__pycache__/
+*.log
+app.tgz

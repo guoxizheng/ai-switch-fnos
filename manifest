@@ -1,0 +1,13 @@
+appname               = ai-switch
+version               = 1.0.0
+display_name          = 大模型切换
+platform              = x86
+source                = thirdparty
+maintainer            = Guoxizheng
+distributor           = Guoxizheng
+desktop_uidir         = ui
+desktop_applaunchname = ai-switch.Application
+service_port          = 8479
+ctl_stop              = true
+desc                  = 远程 GPU 主机大模型服务切换：LLM 对话/视频生成/vLLM 推理一键切换，含 WOL 唤醒与状态监控
+changelog             = 首个版本

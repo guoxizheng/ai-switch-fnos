@@ -1,0 +1,17 @@
+#!/bin/bash
+# ai-switch / cmd/install_callback - 向导值写入配置
+export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin"
+ETC="${TRIM_PKGETC}"; VAR="${TRIM_PKGVAR}"
+mkdir -p "${ETC}" "${VAR}"
+cat > "${ETC}/config.json" << CONF
+{
+  "ssh_host": "${wizard_ssh_host}",
+  "ssh_user": "${wizard_ssh_user}",
+  "ssh_pass": "${wizard_ssh_pass}",
+  "wol_mac": "${wizard_wol_mac}",
+  "wol_broadcast": "${wizard_wol_broadcast}",
+  "poll_interval": 15
+}
+CONF
+echo "$(date '+%F %T') - config written" >> "${VAR}/info.log"
+exit 0
